@@ -699,6 +699,22 @@ body {
   .mobile-toggle {
     display: flex;
   }
+
+  /* Mobile: show nav when hamburger is active */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 18px;
+    background: rgba(5, 5, 5, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 12px;
+    border-radius: 12px;
+    gap: 8px;
+    z-index: 50;
+    min-width: 160px;
+  }
   .nav-links {
     display: none;
   }
